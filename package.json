@@ -1,0 +1,19 @@
+{
+  "name": "@begin/parse5",
+  "description": "A bundled version of Parse5 for Lambda Node",
+  "main": "parse5.browserify.min.js",
+  "scripts": {
+    "b": "browserify --node --im -s 'parse5' --no-builtins index.js > parse5.browserify.js && terser parse5.browserify.js -o parse5.browserify.min.js",
+    "test": "tape ./test.js | tap-spec"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "parse5": "^6.0.1",
+    "terser": "^5.7.1"
+  },
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^5.3.0"
+  },
+  "version": "0.0.1"
+}
