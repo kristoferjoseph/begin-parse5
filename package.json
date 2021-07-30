@@ -1,5 +1,6 @@
 {
   "name": "@begin/parse5",
+    "version": "0.0.0",
   "description": "A bundled version of Parse5 for Lambda Node",
   "main": "parse5.browserify.min.js",
   "scripts": {
